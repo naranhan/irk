@@ -1,0 +1,44 @@
+// compress: true
+@import "vars.less";
+@import "helpers.less";
+
+html {
+    font-size: 15px;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font: 1rem;
+    color: @black;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+
+    background-color: #c1e6d2;
+    background-image: url("https://www.transparenttextures.com/patterns/food.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+@import "header.less";
+@import "container.less";
+@import "main.less";
+@import "menu.less";
+@import "gallery.less";
+@import "table.less";
